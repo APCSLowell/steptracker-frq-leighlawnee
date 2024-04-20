@@ -16,7 +16,7 @@ minimum = min;
 public void addDailySteps(int steps){
 totalSteps+=steps;
 totalDays++;
-if(steps>=min)
+if(steps>=minimum)
 numActiveDays++;
 }
 
