@@ -21,7 +21,7 @@ numActiveDays++;
 }
 
 public int activeDays(){
-return numActiveDays
+return numActiveDays;
 }
 
 public double averageSteps(){
