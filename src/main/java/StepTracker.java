@@ -6,18 +6,19 @@ private int totalDays;
 private int numActiveDays;
 private int minimum;
  
-public StepTracker(int min){
- minimum = min;
+StepTracker(int mini){
+ minimum = mini;
  totalSteps = 0;
  totalDays = 0;
  numActiveDays = 0;
 }
 
 public void addDailySteps(int steps){
-totalSteps+=steps;
-totalDays++;
 if(steps>minimum)
 numActiveDays++;
+
+ totalSteps+=steps;
+totalDays++;
 }
 
 public int activeDays(){
@@ -25,8 +26,8 @@ return numActiveDays;
 }
 
 public double averageSteps(){ 
-if(days == 0)
-            return 0;
+if(totalDays == 0)
+            return 0.0;
 
         return totalSteps / (double) days;
 
