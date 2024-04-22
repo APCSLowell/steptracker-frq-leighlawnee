@@ -14,7 +14,7 @@ public StepTracker(int mini){
 }
 
 public void addDailySteps(int steps){
-if(steps>minimum)
+if(steps>=minimum)
 numActiveDays++;
 
  totalSteps+=steps;
