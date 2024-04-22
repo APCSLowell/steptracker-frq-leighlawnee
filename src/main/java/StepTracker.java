@@ -6,7 +6,7 @@ private int totalDays;
 private int numActiveDays;
 private int minimum;
  
-StepTracker(int mini){
+public StepTracker(int mini){
  minimum = mini;
  totalSteps = 0;
  totalDays = 0;
