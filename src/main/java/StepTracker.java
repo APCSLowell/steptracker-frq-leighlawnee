@@ -27,8 +27,8 @@ return numActiveDays;
 public double averageSteps(){ 
 if(totalDays == 0)
             return 0.0;
-
-        return totalSteps / (double) days;
+else
+        return (double)totalSteps / days;
 
 }
 
